@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CircleAssetView">
+        <attr name="reachInsideColor" format="color"/>
+        <attr name="reachInsideSize" format="dimension"/>
+        <attr name="reachOutsideColor" format="color"/>
+        <attr name="reachOutsideSize" format="dimension"/>
+        <attr name="unreachableInsideColor" format="color"/>
+        <attr name="unreachableInsideSize" format="dimension"/>
+        <attr name="unreachableOutsideColor" format="color"/>
+        <attr name="unreachableOutsideSize" format="dimension"/>
+        <attr name="moneyText" format="string"/>
+        <attr name="moneyTextColor" format="color"/>
+        <attr name="moneyTextSize" format="dimension"/>
+        <attr name="moneyTextHint" format="string"/>
+        <attr name="moneyTextHintColor" format="color"/>
+        <attr name="moneyTextHintSize" format="dimension"/>
+        <attr name="degree" format="integer"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="insideRadius" format="dimension"/>
+        <attr name="outsideRadius" format="dimension"/>
+        <attr name="textSpace" format="dimension"/>
+
+        <attr name="text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+
+    </declare-styleable>
+</resources>
