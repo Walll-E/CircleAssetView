@@ -1,11 +1,14 @@
 # CircleAssetView
 自定义环形资产分布图，颜色，大小，半径均可自定义。
+
 ## 主要功能：
  - 支持内侧尺寸、外侧尺寸、颜色
  - 支持资产文本的显示或隐藏、字体大小、字体颜色
  - 支持设置角度、获取最大角度、最小角度、当前角度
  
+
 ### 添加Gradle
+
 #### 1.在project的build.gradle下
   allprojects {   
 	 		repositories {     
@@ -13,16 +16,19 @@
 	 				maven { url 'https://jitpack.io' } 
 	 		}
 	 }
-```
+
 #### 2.在app 的 build.gradle下
+
 ```
 dependencies {   
 		compile 'com.github.Walll-E:CircleAssetView:v1.0'
 	}
+```
 
 ###用法：
 布局文件中声明：
-```xml
+```
+xml
 <com.walle.circleassetview.CircleAssetView   
 		android:id="@+id/assetView"    
 		app:radius="80dp"    
@@ -37,14 +43,17 @@ dependencies {
 		app:degree="180"    
 		android:layout_width="wrap_content"  
 		android:layout_height="wrap_content"/>
+```
 		
 代码中使用
+
+```
 	assetView = (CircleAssetView) findViewById(R.id.assetView);
 	assetView.setMoneyText("￥2900.0");
 	assetView.setMoneyTextColor(Color.rgb(33,33,33));
 	assetView.setMoneyTextHint("总资产(元)");
 	assetView.setTextVisibility(CircleAssetView.AssetTextVisibility.Visible);
-	
+```
 	
 ## 关于我
 个人邮箱：walle0228@163.com
