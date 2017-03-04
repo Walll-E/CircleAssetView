@@ -10,12 +10,14 @@
 ### 添加Gradle
 
 #### 1.在project的build.gradle下
+```
   allprojects {   
 	 		repositories {     
 	 				...       
 	 				maven { url 'https://jitpack.io' } 
 	 		}
 	 }
+```
 
 #### 2.在app 的 build.gradle下
 
@@ -28,7 +30,6 @@ dependencies {
 ###用法：
 布局文件中声明：
 ```
-xml
 <com.walle.circleassetview.CircleAssetView   
 		android:id="@+id/assetView"    
 		app:radius="80dp"    
